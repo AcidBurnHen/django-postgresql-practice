@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.10'
 services:
   web:
     build: 
@@ -17,3 +17,5 @@ services:
       - db
   db: 
     image: postgres:11
+    environment:
+      - POSTGRES_PASSWORD=postgres

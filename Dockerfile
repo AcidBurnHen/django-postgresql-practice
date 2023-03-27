@@ -1,12 +1,10 @@
-FROM python:3.7
-
 # Pull base image
-FROM python:3.7
+FROM python:3.10
 
 # Set enviroment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-ENV PYTHONPATH=/hello/hello_world
+ENV PYTHONPATH=/hello/postgresql
 
 # Set work directory
 WORKDIR /postgresql
